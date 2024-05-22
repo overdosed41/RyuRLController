@@ -5,7 +5,7 @@ from ryu.controller.handler import set_ev_cls
 from ryu.ofproto import ofproto_v1_3
 from dqn_agent import DQNAgent
 from network_env import NetworkEnv
-from utils import get_network_topology, calculate_link_cost
+from utils import get_network_topology
 
 class RyuController(app_manager.RyuApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]

@@ -19,6 +19,16 @@ def parse_network_topology(topo_file):
             G.add_edge(node1, node2)
     return G
 
+def get_network_topology(topo_file):
+    """
+    获取网络拓扑作为一个NetworkX图。
+    参数:
+        topo_file (str): 拓扑文件的路径。
+    返回:
+        nx.Graph: 代表网络拓扑的NetworkX图。
+    """
+    return parse_network_topology(topo_file)
+
 
 def calculate_link_metrics(G, link_params):
     """
